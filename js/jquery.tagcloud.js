@@ -26,7 +26,9 @@
 
 			// Add title text to list parent
 			ol.attr({
-				title: options.hiddentext
+				title: options.hiddentext,
+				role: 'list',
+
 			});
 
 			//Loop over each element in the set and 
@@ -40,7 +42,8 @@
 					.children('a').attr({
 						title: 	titleAttr,
 						rel: 	'tag',
-						tabindex: index,
+						tabindex: '0',
+						role: 	'listitem',
 						style: 'font-size:' + index +'rem;' + 'line-height:' + index +'rem;', 
 					});
 				var titleAttr = $this.text();
