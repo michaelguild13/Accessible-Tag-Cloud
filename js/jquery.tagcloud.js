@@ -17,6 +17,8 @@
 		// Cache this
 		var $this = $(this);
 		
+		console.log($this);
+
 		$this.each(function(){
 			var ol = $this;
 			var olLi = ol.children('li');
@@ -27,10 +29,9 @@
 				title: options.hiddentext
 			});
 
-			console.log(olLiCount);
 			//Loop over each element in the set and 
 	 		//return them to keep the chain alive.
-	 		$('li').each(function(index) { 
+	 		olLi.each(function(index) { 
 				
 				var $this = $(this);
 				var index = index + 1;
@@ -48,7 +49,6 @@
 			
 			// Sort Randomly
 			olLi.sort(function(a,b){
-				console.log(olLi);
 				// Get a random number between 0 and number of items
                  var list = Math.floor(Math.random() * olLiCount);
                  return( list);
