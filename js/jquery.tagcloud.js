@@ -8,7 +8,6 @@
  		// Set Default settings
  		var defaults = {
  			fontsize: '10',
- 			tabindex: '0',
  			hiddentext: 'This is a keyword Tag Cloud. Tab though from Relevant to not so relevent.',
  		};
  		
@@ -24,7 +23,9 @@
 			var olLiCount =  olLi.length;
 
 			// Add title text to list parent
-			ol.attr('title', options.hiddentext);
+			ol.attr({
+				title: options.hiddentext
+			});
 
 			console.log(olLiCount);
 			//Loop over each element in the set and 
