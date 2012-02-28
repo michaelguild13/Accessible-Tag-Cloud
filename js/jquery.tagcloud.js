@@ -28,7 +28,6 @@
 			ol.attr({
 				title: options.hiddentext,
 				role: 'list',
-
 			});
 
 			//Loop over each element in the set and 
@@ -44,7 +43,7 @@
 						rel: 	'tag',
 						tabindex: '0',
 						role: 	'listitem',
-						style: 'font-size:' + index +'rem;' + 'line-height:' + index +'rem;', 
+						style: 'font-size:' + (olLiCount - index) +'rem;' + 'line-height:' + (olLiCount - index) +'rem;', 
 					});
 				var titleAttr = $this.text();
 
