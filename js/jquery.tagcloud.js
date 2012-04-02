@@ -1,3 +1,8 @@
+/* Accessible Tag Clouds
+ * Michael Guild
+ * michaelguild13@gmail.com
+ */
+
 (function($){
 
 	console.log($(document).jquery);
