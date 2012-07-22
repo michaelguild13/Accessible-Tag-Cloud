@@ -5,12 +5,11 @@
 
 (function($){
 
-	console.log($(document).jquery);
-
 	// Declare pluging
 	$.fn.tagcloud = function(options){  
  		
  		// Set Default settings
+ 		// TODO: add more Defaults vs hard coding.
  		var defaults = {
  			fontsize: '10',
  			hiddentext: 'This is a keyword Tag Cloud. Tab though from Relevant to not so relevent.',
